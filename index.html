@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet Cakes Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🍰 Sweet Cakes Bakery</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Delicious Cakes Made With Love</h1>
+        <p>Fresh, beautiful & mouth-watering cakes for every occasion.</p>
+        <button onclick="scrollToGallery()">View Cakes</button>
+    </div>
+
+    <div class="hero-img">
+        <img src="images/cake1.jpg" alt="Cake">
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+    <h2>Our Special Cakes</h2>
+
+    <div class="gallery-grid">
+        <div class="card">
+            <img src="images/cake1.jpg">
+            <h3>Birthday Cake</h3>
+        </div>
+
+        <div class="card">
+            <img src="images/cake2.jpg">
+            <h3>Chocolate Cake</h3>
+        </div>
+
+        <div class="card">
+            <img src="images/cake3.jpg">
+            <h3>Party Cake</h3>
+        </div>
+
+        <div class="card">
+            <img src="images/cake4.jpg">
+            <h3>Classic Cake</h3>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        Sweet Cakes Bakery creates beautiful handcrafted cakes using premium ingredients.
+        We make every celebration sweeter and memorable.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Sweet Cakes Bakery | Designed by Somya 💖
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

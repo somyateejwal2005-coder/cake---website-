@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#fff6ec;
+    color:#4a2c1d;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#ff7a18,#ffb347);
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* HERO */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px 40px;
+    gap:30px;
+}
+
+.hero-text h1{
+    font-size:42px;
+    color:#b34700;
+}
+
+.hero-text p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.hero-text button{
+    padding:12px 25px;
+    border:none;
+    background:#ff7a18;
+    color:white;
+    font-size:16px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+.hero-text button:hover{
+    background:#e56700;
+}
+
+.hero-img img{
+    width:380px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* GALLERY */
+.gallery{
+    padding:60px 40px;
+    text-align:center;
+}
+
+.gallery h2{
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.card h3{
+    margin-top:10px;
+}
+
+/* ABOUT */
+.about{
+    padding:60px 40px;
+    text-align:center;
+}
+
+.about h2{
+    font-size:32px;
+}
+
+/* CONTACT */
+.contact{
+    padding:60px 40px;
+    text-align:center;
+}
+
+form{
+    max-width:400px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+form button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#ff7a18;
+    color:white;
+    border-radius:25px;
+}
+
+/* FOOTER */
+footer{
+    background:#ff7a18;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+}
